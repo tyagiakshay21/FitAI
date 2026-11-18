@@ -1,0 +1,11 @@
+{
+  "name": "fitai-local",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/dev.cjs"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.15"
+  }
+}

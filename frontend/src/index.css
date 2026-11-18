@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+html, body, #root { height: 100%; }
+body { @apply bg-chalk font-sans text-ink antialiased; }
+h1, h2, h3 { @apply font-display tracking-tight; }
+:focus-visible { outline: 2px solid #1F6F5B; outline-offset: 2px; }
+
+@layer components {
+  .card { @apply rounded-xl2 border border-line bg-white p-5; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-50; }
+  .btn-primary { @apply btn bg-pine text-white hover:bg-pine-mid; }
+  .btn-ghost { @apply btn border border-line bg-white text-ink hover:bg-pine-light; }
+  .btn-danger { @apply btn bg-coral text-white hover:opacity-90; }
+  .input { @apply w-full rounded-xl border border-line bg-white px-3 py-2.5 text-sm placeholder:text-ink-faint focus:border-pine; }
+  .label { @apply mb-1 block text-sm font-medium text-ink-soft; }
+  .chip { @apply inline-flex items-center rounded-full border border-line bg-white px-3 py-1.5 text-sm transition-colors; }
+  .chip-on { @apply border-pine bg-pine text-white; }
+  .muted { @apply text-sm text-ink-soft; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

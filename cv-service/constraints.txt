@@ -1,0 +1,6 @@
+# Keep MediaPipe's OpenCV/JAX dependencies compatible across supported Windows installs.
+numpy==1.26.4
+opencv-contrib-python==4.10.0.84
+jax==0.4.35
+jaxlib==0.4.35
+matplotlib==3.9.4

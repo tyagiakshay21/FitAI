@@ -1,0 +1,7 @@
+**/node_modules/
+**/dist/
+**/venv/
+**/.env
+!**/.env.example
+run-logs/
+uploads/
